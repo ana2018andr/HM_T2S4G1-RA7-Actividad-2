@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        (function () {
+            let i;
+            let j;
+            let matriza = Array();
+            for (i = 0; i < 2; i++) {
+                matriza[i] = new Array(2);
+            }
+            let matrizb = Array();
+            for (i = 0; i < 2; i++) {
+                matrizb[i] = new Array(2);
+            }
+            let matrizc = Array();
+            for (i = 0; i < 2; i++) {
+                matrizc[i] = new Array(2);
+            }
+            console.log("Arreglo A: ");
+            for (i = 0; i < 2; i++) {
+                for (j = 0; j < 2; j++) {
+                    matriza[i][j] = parseInt(prompt("Numero: "));
+                }
+            }
+            console.log("Arreglo B: ");
+            for (i = 0; i < 2; i++) {
+                for (j = 0; j < 2; j++) {
+                    matrizb[i][j] = parseInt(prompt("Numero "));
+                }
+            }
+            for (i = 0; i <= 1; i++) {
+                for (j = 0; j <= 1; j++)
+                    matrizc[i][j] = matriza[i][j] * matrizb[i][j];
+            }
+            console.log("Arreglo C: ");
+            console.log("==========: ");
+            console.log("Numero (0 , 0) : " + matrizc[0][0]);
+            console.log("Numero (0 , 1) : " + matrizc[0][1]);
+            console.log("Numero (1 , 0) : " + matrizc[1][0]);
+            console.log("Numero (1 , 1) : " + matrizc[1][1]);
+            matriz(i, j);
+            function matriz(i, j) {
+                return;
+            }
+        })();
+
+
+
+    </script>
+</body>
+
+</html>
