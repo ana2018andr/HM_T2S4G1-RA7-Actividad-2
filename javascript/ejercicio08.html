@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        (function () {
+            let numero;
+            let inverso = 0;
+            let cifra;
+            numero = parseInt(prompt("Introduce un número para invertir: "));
+            while (numero != 0) {
+                cifra = numero % 10;
+                inverso = (inverso * 10) + cifra;
+                numero /= 10;
+                console.log("inverso:" + inverso);
+                invertir(numero);
+            }
+            function invertir(numero) {
+                return inverso;
+            }
+        })();
+
+    </script>
+</body>
+
+</html>

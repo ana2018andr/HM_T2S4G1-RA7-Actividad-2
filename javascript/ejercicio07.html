@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            let p;
+            let d;
+            let m;
+            let ds = 0;
+            let x = "";
+            m = parseInt(prompt("ingrse monto:  "));
+            p = prompt("ingrse plazo recargo:  ");
+            d = prompt("ingrse contado decuento:  ");
+            ingrese(m);
+            switch (p) {
+                case 'G':
+                    switch (d) {
+                        case 'C':
+                            ds = (m * 15) / 100;
+                            x = "15% de descuento";
+                            break;
+                    }
+            }
+            switch (p) {
+                case 'G':
+                    switch (d) {
+                        case 'P':
+                            ds = (m * 10) / 100;
+                            x = "10% de descuento";
+                            break;
+                    }
+            }
+            switch (p) {
+                case 'A':
+                    switch (d) {
+                        case 'c':
+                            ds = (m * 20) / 100;
+                            x = "20% de descuento";
+                            break;
+                    }
+            }
+            switch (p) {
+                case 'A':
+                    switch (d) {
+                        case 'P':
+                            ds = (m * 5) / 100;
+                            x = "5% de descuento";
+                            break;
+                    }
+            }
+            console.log("plazos recargo: " + x);
+            console.log(" contado descuento :" + ds);
+            function ingrese(m) {
+                return;
+            }
+        })();
+
+    </script>
+</body>
+
+</html>

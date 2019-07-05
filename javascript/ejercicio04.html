@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            let num = 0;
+            num = parseInt(prompt("Numero: "));
+            digitos(num);
+            function digitos(num) {
+                let sumpar = 0;
+                let sumimpar = 0;
+                let i = 0;
+                for (i = 0; i <= num; i++) {
+                    if (i % 2 == 0) {
+                        sumpar = sumpar + i;
+                    }
+                    else {
+                        sumimpar = sumimpar + i;
+                    }
+                }
+                console.log("La suma de los pares es:" + sumpar);
+                console.log("La suma de los impares es:" + sumimpar);
+            }
+        })();
+    </script>
+</body>
+
+</html>
